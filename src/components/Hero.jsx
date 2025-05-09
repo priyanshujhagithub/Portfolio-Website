@@ -1,10 +1,19 @@
+import React from 'react';
 import {Parallax} from 'react-scroll-parallax';
+import '../styles/Hero.css';
 
 const Hero = ()=>(
-    <Parallax speed={-20}>
-        <div className="hero-section">
-            <h1>Hello, I'm Priyanshu Jha</h1>
-            <p>Software Developer</p>
-        </div>
-    </Parallax>
+    <section id='hero' className='hero-container'>
+        <Parallax speed={-20}>
+            <h1 className='hero-title'>Hi, I'm Priyanshu Jha</h1>
+        </Parallax>
+        <Parallax speed={10}>
+            <p className='hero-subtitle'>Full-Stack Web Developer • AI-Enthusiast</p>
+        </Parallax>
+        <Parallax speed={-5}>
+            <a href='#projects' className='hero-button'>View My Work</a>
+        </Parallax>
+    </section>
 );
+
+export default Hero;
