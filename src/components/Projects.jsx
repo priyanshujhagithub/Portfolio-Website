@@ -24,8 +24,7 @@ const projects = [
 },
 ];
 
-const Projects = () => {
-return (
+const Projects = () => (
     <section id="projects" className="projects-section">
         <h2 className="projects-heading">Projects</h2>
         <div className="horizontal-scroll-container">
@@ -38,7 +37,6 @@ return (
         ))}
         </div>
     </section>
-    );
-};
+);
 
 export default Projects;
