@@ -1,0 +1,50 @@
+.projects-section {
+    background: #f9fafb;
+    padding: 5rem 2rem;
+}
+
+.projects-heading {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #1f2937;
+}
+
+.horizontal-scroll-container {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 2rem;
+    padding: 2rem;
+    scroll-behavior: smooth;
+}
+
+.project-card {
+    flex: 0 0 80%;
+    scroll-snap-align: start;
+    background: white;
+    border-radius: 16px;
+    padding: 2rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    min-width: 300px;
+    max-width: 600px;
+    text-align: left;
+}
+
+.project-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #111827;
+}
+
+.project-card p {
+    font-size: 1rem;
+    color: #4b5563;
+    margin-bottom: 1rem;
+}
+
+.project-card a {
+    color: #4f46e5;
+    text-decoration: underline;
+    font-weight: 500;
+}
