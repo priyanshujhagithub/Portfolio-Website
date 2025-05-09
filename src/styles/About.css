@@ -1,0 +1,25 @@
+.about-section {
+    min-height: 100vh;
+    background: #ffffff;
+    padding: 6rem 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-content {
+    max-width: 800px;
+    text-align: center;
+}
+
+.about-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #1f2937;
+}
+
+.about-content p {
+    font-size: 1.2rem;
+    color: #4b5563;
+    line-height: 1.8;
+}
