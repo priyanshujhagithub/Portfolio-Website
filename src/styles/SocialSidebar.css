@@ -1,0 +1,81 @@
+.social-sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 100;
+  background: none;
+  pointer-events: none;
+}
+
+.sidebar-logo {
+  margin-top: 2.5rem;
+  pointer-events: auto;
+}
+
+.hexagon {
+  width: 44px;
+  height: 50px;
+  background: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.hexagon:before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  border-radius: 8px;
+  background: none;
+  border: 3px solid #3ff0c6;
+  clip-path: polygon(25% 6%, 75% 6%, 100% 50%, 75% 94%, 25% 94%, 0% 50%);
+}
+.hexagon span {
+  color: #3ff0c6;
+  font-size: 1.5rem;
+  font-weight: 700;
+  z-index: 1;
+  font-family: 'Poppins', 'Inter', sans-serif;
+}
+
+.sidebar-icons {
+  display: flex;
+  flex-direction: column;
+  gap: 2.2rem;
+  margin-top: 3rem;
+  pointer-events: auto;
+}
+.sidebar-icons a {
+  color: #b0b8d1;
+  font-size: 1.7rem;
+  transition: color 0.2s, transform 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.sidebar-icons a:hover {
+  color: #3ff0c6;
+  transform: translateY(-3px) scale(1.15);
+}
+
+.sidebar-line {
+  width: 2px;
+  height: 80px;
+  background: linear-gradient(180deg, #3ff0c6 0%, #6366f1 100%);
+  margin-bottom: 2.5rem;
+  border-radius: 1px;
+  opacity: 0.7;
+  pointer-events: none;
+}
+
+@media (max-width: 900px) {
+  .social-sidebar {
+    display: none;
+  }
+} 

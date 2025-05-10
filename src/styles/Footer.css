@@ -3,32 +3,32 @@
     background: #1f2937;
     color: white;
     text-align: center;
-  }
-  
-  .footer h3 {
+}
+
+.footer h3 {
     font-size: 1.8rem;
     margin-bottom: 1rem;
-  }
-  
-  .social-links {
+}
+
+.social-links {
     display: flex;
     justify-content: center;
     gap: 2rem;
     margin-bottom: 1rem;
-  }
-  
-  .social-links a {
+}
+
+.social-links a {
     color: white;
     font-size: 1.6rem;
     transition: color 0.3s;
-  }
-  
-  .social-links a:hover {
+}
+
+.social-links a:hover {
     color: #60a5fa;
-  }
-  
-  .footer-note {
+}
+
+.footer-note {
     font-size: 0.95rem;
     color: #d1d5db;
-  }
+}
   

@@ -1,14 +1,26 @@
-import React, { useState } from 'react';
-import { motion } from 'framer-motion';
+import React, { useState, useRef } from 'react';
+import { motion, useScroll, useTransform } from 'framer-motion';
 import emailjs from 'emailjs-com';
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import '../styles/Contact.css';
 
-toast.configure();
+const fadeSlide = {
+  initial: { opacity: 0, y: 40 },
+  whileInView: { opacity: 1, y: 0 },
+  transition: { duration: 0.8, ease: 'easeOut' },
+  viewport: { once: true }
+};
 
 const Contact = () => {
   const [formData, setFormData] = useState({ name: '', email: '', message: '' });
+  const sectionRef = useRef(null);
+  const { scrollYProgress } = useScroll({
+    target: sectionRef,
+    offset: ['center center', 'start end', 'end start'],
+  });
+  const opacity = useTransform(scrollYProgress, [0, 0.35, 0.65, 1], [0.3, 1, 1, 0.3]);
+  const scale = useTransform(scrollYProgress, [0, 0.5, 1], [0.92, 1, 0.92]);
 
   const handleChange = e => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -44,16 +56,18 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="contact-section">
+    <section id="contact" className="contact-section" ref={sectionRef}>
       <motion.div
         className="contact-content"
-        initial={{ opacity: 0, y: 50 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8 }}
-        viewport={{ once: true }}
+        style={{ scale, opacity }}
+        {...fadeSlide}
       >
-        <h2>Contact Me</h2>
-        <p>Let’s build something awesome together. Feel free to reach out!</p>
+        <div className="about-heading-row">
+          <span className="about-section-number">04.</span>
+          <h2 className="about-title">Contact Me</h2>
+          <div className="about-divider" />
+        </div>
+        <p>Let's build something awesome together. Feel free to reach out!</p>
 
         <form onSubmit={handleSubmit} className="contact-form">
           <input
