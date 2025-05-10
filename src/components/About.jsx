@@ -11,9 +11,9 @@ const fadeSlide = (delay = 0) => ({
 });
 
 const technologies = [
-  'JavaScript (ES6+)', 'TypeScript',
-  'React', 'Eleventy',
-  'Node.js', 'WordPress'
+  'JavaScript', 'Express.js',
+  'React.js', 'MongoDB',
+  'Node.js', 'MySQL'
 ];
 
 const About = () => {
@@ -38,23 +38,23 @@ const About = () => {
                 <div className="about-divider" />
               </div>
               <p className="about-description">
-                Hello! My name is Priyanshu and I enjoy creating things that live on the internet. My interest in web development started back in 2012 when I decided to try editing custom Tumblr themes — turns out hacking together a custom reblog button taught me a lot about HTML & CSS!
+                  Hello! My name is Priyanshu and I enjoy creating things that live on the internet.
+                  Currently, my focus is on developing <span className="about-link">innovative digital solutions</span> through projects like a <span className="about-link">Social Media Web App</span> built with the <span className="about-link">MERN stack</span>, an <span className="about-link">IoT-enabled Smart Inventory Management System</span> utilizing <span className="about-link">React, Node.js, and MongoDB</span>, and a <span className="about-link">Workout Web App</span> featuring secure <span className="about-link">JWT authentication</span>.
               </p>
               <p className="about-description">
-                Fast-forward to today, and I've had the privilege of working at <span className="about-link">an advertising agency</span>, <span className="about-link">a start-up</span>, <span className="about-link">a huge corporation</span>, and <span className="about-link">a student-led design studio</span>. My main focus these days is building accessible, inclusive products and digital experiences at <span className="about-link">Upstatement</span> for a variety of clients.
-              </p>
-              <p className="about-description">
-                I also recently <span className="about-link">launched a course</span> that covers everything you need to build a web app with the Spotify API using Node & React.
+                  I've honed my skills through certifications such as <span className="about-link">Full-stack Web Development Bootcamp</span>, <span className="about-link">Summer Analytics 2024 at IIT Guwahati</span>.
+    
+                  Beyond projects and coursework, I’ve contributed to <span className="about-link">Springer Publications</span> on <span className="about-link">pollution prediction models</span>, tackled over <span className="about-link">400 Leetcode problems</span>, and built proficiency in Web Technologies.
               </p>
               <div className="about-tech-list">
                 <p>Here are a few technologies I've been working with recently:</p>
                 <ul>
-                  <li>JavaScript (ES6+)</li>
-                  <li>TypeScript</li>
+                  <li>JavaScript</li>
+                  <li>Express</li>
                   <li>React</li>
-                  <li>Eleventy</li>
+                  <li>MongoDB</li>
                   <li>Node.js</li>
-                  <li>WordPress</li>
+                  <li>MySQL</li>
                 </ul>
               </div>
             </motion.div>
