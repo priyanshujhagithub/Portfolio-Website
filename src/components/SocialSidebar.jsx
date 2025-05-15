@@ -27,7 +27,7 @@ export default function SocialSidebar() {
         <a href="https://leetcode.com/u/ashu010/" target="_blank" rel="noopener noreferrer" aria-label="LeetCode">
           <img src="/leetcode.png" alt="LeetCode" style={{ width: 24, height: 24, display: 'block' }} />
         </a>
-        <a href="https://codeforces.com/profile/Pjha_coder" target="_blank" rel="noopener noreferrer" aria-label="Codeforces">
+        <a href="https://codeforces.com/profile/Pjha_code" target="_blank" rel="noopener noreferrer" aria-label="Codeforces">
           <img src="/codeforces.png" alt="Codeforces" style={{ width: 24, height: 24, display: 'block' }} />
         </a>
       </div>
