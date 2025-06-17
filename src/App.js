@@ -26,6 +26,7 @@ function App() {
         <Contact />
         <Footer />
         <Analytics />
+        <SpeedInsights />
       </div>
     </ParallaxProvider>
   );
